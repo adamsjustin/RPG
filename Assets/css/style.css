@@ -1,0 +1,169 @@
+/*INDEX CSS */
+
+.index {
+	background: url("../images/background.jpg");
+}
+
+header {
+	background-color: darkred;
+	text-align: center;
+}
+
+#header {
+	font-family: 'Montserrat Alternates', sans-serif;
+	height: 70px;
+    font-size: 70px;
+}
+
+.container {
+	text-align: center;
+}
+
+#selectText {
+	background: cornflowerblue;
+    border: double 10px;
+    height: 75px;
+}
+
+#selectEText {
+	background: cornflowerblue;
+    border: double 10px;
+    height: 75px;
+}
+
+.rows {
+	text-align: center;
+	height: 300px;
+}
+
+.character {
+	width: 20%;
+	padding-bottom:10px; 
+	padding-top:10px;
+}
+
+.enemyCharacters {
+	width: 20%;
+	padding-bottom:10px; 
+	padding-top:10px;	
+}
+
+#knight {
+	background-image: url("../images/knight.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#barbarian {
+	background-image: url("../images/barbarian.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#mage {
+	background-image: url("../images/mage.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#scout {
+	background-image: url("../images/scout.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#priest {
+	background-image: url("../images/priest.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#dknight {
+	background-image: url("../images/dknight.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#orc {
+	background-image: url("../images/orc.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#bmage {
+	background-image: url("../images/bmage.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#thief {
+	background-image: url("../images/thief.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+#warlock {
+	background-image: url("../images/warlock.gif");
+	background-size: 225px 165px;
+	background-repeat: no-repeat;
+}
+
+p {
+	background-color: blue;
+	padding: 5px;
+	margin-right: 5px;
+    margin-top: 121px;
+    border: ridge 5px;
+}
+
+.btns {
+	background-color: darkblue;
+	width: 100%	;
+}
+
+.battleButton {
+	text-align: center;
+	width: 20%;
+	background-color: darkblue;
+	border: ridge 5px white;
+	color: red;
+}
+
+/* BATTLE CSS */
+
+.fight {
+	background: url("../images/battleground.jpg");
+	background-repeat: no-repeat;
+}
+
+.battleground {
+	height: 350px;
+}
+
+.abilityMenu {
+	background-color: blue;
+	border: ridge 5px white;
+}
+
+.fightText {
+	background-color: black;
+	border: ridge 5px white;
+}
+
+.selectionBar {
+	height: 150px;
+}
+
+.characterName {
+	text-align: left;
+	color: red;
+}
+
+.abilities {
+	color: yellow;
+	float: left;
+}
+
+.stats {
+	float: right;
+}
