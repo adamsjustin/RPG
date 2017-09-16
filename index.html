@@ -11,38 +11,61 @@
 </head>
 <body class="index">
 <!-- header with banner -->
-	<header><h1 id="header">RPG Game!</h1></header>	
+	<header style="background-color: #a8c5de"><h1 id="header">RPG Game!</h1></header>	
 
 <!-- Primary Container -->	
 <div class="container">
 
 
-	<div class="container">
-	  	<div class="row rows" id="characterRow">
+	<div class="container remove">
+
+
+         
+
+	  	<div class="row rows heroWrapper" id="characterRow">
 		  	<div class="col-12" id="selectText"><h2>Select Your Character</h2></div>
-		  	<div class="character" data-character="knight" id="knight"><p><button type="button" class="btn charButton btns btn-primary btn-sm">Knight</button></p></div>
-		  	<div class="character" data-character="barbarian" id="barbarian"><p><button type="button" class="btn charButton btns btn-primary btn-sm">Barbarian</button></p></div>
-		  	<div class="character" data-character="mage" id="mage"><p><button type="button" class="btn charButton btns btn-primary btn-sm">Mage</button></p></div>
-		  	<div class="character" data-character="scout" id="scout"><p><button type="button" class="btn charButton btns btn-primary btn-sm">Scout</button></p></div>
-		  	<div class="character" data-character="priest" id="priest"><p><button type="button" class="btn charButton btns btn-primary btn-sm">Priest</button></p></div>
+		  	<div class="character" id="knight"><p><button type="button" class="btn charButton btns btn-primary btn-sm" data-character="knight">Knight</button></p></div>
+		  	<div class="character" id="barbarian"><p><button type="button" class="btn charButton btns btn-primary btn-sm" data-character="barbarian">Barbarian</button></p></div>
+		  	<div class="character" id="mage"><p><button type="button" class="btn charButton btns btn-primary btn-sm" data-character="mage">Mage</button></p></div>
+		  	<div class="character" id="scout"><p><button type="button" class="btn charButton btns btn-primary btn-sm" data-character="scout">Scout</button></p></div>
+		  	<div class="character" id="priest"><p><button type="button" class="btn charButton btns btn-primary btn-sm" data-character="priest">Priest</button></p></div>
 		</div>
 	</div>
 
-	<div class="container">
-	 	<div class="row rows" id="enemyRow">
+	<div class="container remove">
+	 	<div class="row rows enemyWrapper" id="enemyRow">
 		  	<div class="col-12" id="selectEText"><h2>Select Enemy</h2></div>
-		  	<div class="enemyCharacters" data-character="dknight" id="dknight"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm">Dark Knight</button></p></div>
-		  	<div class="enemyCharacters" data-character="orc" id="orc"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm">Orc</button></p></div>
-		  	<div class="enemyCharacters" data-character="bmage" id="bmage"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm">Black Mage</button></p></div>
-		  	<div class="enemyCharacters" data-character="thief" id="thief"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm">Thief</button></p></div>
-		  	<div class="enemyCharacters" data-character="warlock" id="warlock"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm">Warlock</button></p></div>
+		  	<div class="enemyCharacters" id="dknight"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm" data-character="dknight">Dark Knight</button></p></div>
+		  	<div class="enemyCharacters" id="orc"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm" data-character="orc">Orc</button></p></div>
+		  	<div class="enemyCharacters" id="bmage"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm" data-character="bmage">Black Mage</button></p></div>
+		  	<div class="enemyCharacters" id="thief"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm" data-character="thief">Thief</button></p></div>
+		  	<div class="enemyCharacters"  id="warlock"><p><button type="button" class="btn enemyButton btns btn-primary btn-sm" data-character="warlock">Warlock</button></p></div>
 		</div>
 	</div>
 <!--test button for selecting character bugcheck <btn type="button" class="test">button</btn> -->
 	<div class="row">
-			<div class="col-12"><a href="battle.html"><button type="button" class="btn btn-primary btn-lg battleButton">Battle!</button></a></div>
+			<div class="col-12"><div id="vs">
+            <img id="hero-image" />
+            <span>VS.</span>
+            <img id="enemy-image" />
+        </div></div>
 	</div>
 </div>
+
+<div class="col-12" style="text-align: center"><button type="button" class="btn btn-primary btn-lg" id="battleButton">Battle!</button></div>
+
+<div id="battle-screen" style="text-align: center; width: 50%; margin: 0 auto; background-color: #0663b4;">
+        
+        <div id="fighting-options">
+            <a class="fighting-option-text" id="option-attack" href="#" style="float: left;"> Attack</a>
+            <a class="fighting-option-text" id="option-defend" href="#" style="float: right;"> Wait </a>
+        </div>
+        <div id="player-stats" style="float: left;"></div>
+        <div id="enemy-stats" style="float: right;"></div>
+    </div>
+
+
+
 
 </body>
 

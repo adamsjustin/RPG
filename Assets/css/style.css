@@ -79,10 +79,12 @@ header {
 }
 
 #dknight {
-	background-image: url("../images/dknight.gif");
-	background-size: 225px 165px;
-	background-repeat: no-repeat;
+		background-image: url("../images/dknight.gif");
+		background-size: 225px 165px;
+		background-repeat: no-repeat;
+
 }
+
 
 #orc {
 	background-image: url("../images/orc.gif");
@@ -121,7 +123,7 @@ p {
 	width: 100%	;
 }
 
-.battleButton {
+#battleButton {
 	text-align: center;
 	width: 20%;
 	background-color: darkblue;
@@ -167,3 +169,9 @@ p {
 .stats {
 	float: right;
 }
+
+.mirror {
+     -moz-transform: scale(-1, 1);
+     -webkit-transform: scale(-1, 1);
+     transform: scale(-1, 1);
+  }
