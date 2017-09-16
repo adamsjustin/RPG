@@ -320,12 +320,7 @@ $("#battleButton").on("click", function() {
 	$("#battle-screen").show();
 	$("#battle-screen").css("height", "150px");
 
-/* function flip() {
-	if $('#hero-image').src === scout.character.image {
-		$("#hero-image").addClass("mirror");
-	}
-}
-*/
+
 
 }); 
 
